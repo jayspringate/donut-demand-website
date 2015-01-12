@@ -26,4 +26,4 @@ function getFat() {
                             document.getElementById("donutsPerCustomer").value);
 
   donutShop.salesReport();
-  
+  } 
