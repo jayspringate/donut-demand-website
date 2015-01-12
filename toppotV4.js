@@ -17,13 +17,20 @@ function Shop(location, hours, minTraffic, maxTraffic, percentEntering, donutsPe
     }
   }
 }
-function getFat() {    
+
+function getFat(e) {    
   var donutShop = new Shop (document.getElementById("location").value,
                             document.getElementById("hours").value,
                             document.getElementById("minTraffic").value,
                             document.getElementById("maxTraffic").value,
                             document.getElementById("percentEntering").value,
                             document.getElementById("donutsPerCustomer").value);
-
+  
   donutShop.salesReport();
-  } 
+  }
+ var makeDonuts = document.getElementById("makeDonuts");
+ makeDonuts.addEventListener('click', getFat, false);
+
+
+  
+  
